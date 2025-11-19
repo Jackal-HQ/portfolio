@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio — Gabriel R. Alamo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#home">Gabriel R. Alamo</a>
+        <button
+          id="nav-toggle"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <nav id="primary-nav" class="nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <!-- <li><a href="#skills">Skills</a></li> -->
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <h1>Hi, I'm Gabriel Ricardo Alamo.</h1>
+          <p class="lead">I build things for the web — designer & developer.</p>
+          <p><a class="btn" href="#projects">See my work</a></p>
+        </div>
+      </section>
+
+      <section id="about" class="about container">
+        <h2>About Me</h2>
+        <p>
+          Computer Science Junior at Florida International University passionate
+          about AI-driven development and purpose-built applications. Currently
+          balancing academics with hands-on experience across Project
+          Management, Customer Service and Technical Support. I currently work
+          as technology specialist at Lexus so we can go referral for referral
+          if you want a new car.
+        </p>
+      </section>
+
+      <section id="projects" class="projects container">
+        <h2>Selected Projects</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Lease Saving Guide</h3>
+            <p>
+              Lease Saving Plan Lease Saving Plan is a car lease and insurance
+              calculator that helps users make informed decisions about car
+              leasing. It allows users to calculate monthly lease payments,
+              estimate insurance costs, and track savings toward their down
+              payment goals. The program supports both English and Spanish for
+              broader accessibility.
+            </p>
+            <a
+              class="card-link"
+              href="https://github.com/Jackal-HQ/Lease-Saving-Guide"
+              >View project →</a
+            >
+            <div class="pd10"></div>
+
+            <ul class="skills-list">
+              <li>Python</li>
+              <li>MYSQL</li>
+              <li>CustomTkinter</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <h3>Water Quality Observations</h3>
+            <p>
+              Engineered full stack app to visualize Biscayne Bay water quality
+              data using Flask, MongoDB, and Streamlit. Designed and deployed a
+              Streamlit-based dashboard as frontend with customizable charts to
+              study statistic trends. Leveraged Flask to create an API pulling
+              data from MongoDB to return specified data to the frontend.
+              Created algorithms which filter datasets based on Z-Score methods
+              to import data to MongoDB database .
+            </p>
+            <a
+              class="card-link"
+              href="https://github.com/FrankPuerta/Water-Quality-Observations-API-Project"
+              >View project →</a
+            >
+            <div class="pd10"></div>
+            <ul class="skills-list">
+              <li>Python</li>
+              <li>Streamlit</li>
+              <li>MongoDB</li>
+              <li>Flask</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <h3>HERMES – AI News Agent</h3>
+            <p>
+              HERMES is a web-based AI-powered news agent that generates and
+              presents multimedia news stories directly through an interactive
+              Flask web interface. The platform integrates AI news generation,
+              video playback, and navigation through past news content.
+            </p>
+            <a
+              class="card-link"
+              href="https://github.com/daniel-rawana/ai-news-agent"
+              >View project →</a
+            >
+            <div class="pd10"></div>
+
+            <ul class="skills-list">
+              <li>HTML &amp; CSS</li>
+              <li>JavaScript</li>
+              <li>Python (Flask)</li>
+              <li>OpenAI / AI Agent System</li>
+              <li>YouTube / Video Embed</li>
+            </ul>
+          </article>
+        </div>
+        <div class="pd10"></div>
+        <article class="project-card">
+          <h3>DuelDot</h3>
+          <p>
+            A fast-paced 2D shooter where you control a circle and battle
+            against other players using precision shooting and strategic
+            movement. Dodge bullets, take down enemies, and climb the
+            leaderboard in this minimalist but intense multiplayer arena!
+          </p>
+          <a
+            class="card-link"
+            href="https://github.com/CarlosMelicandia/DuelDot"
+            >View project →</a
+          >
+          <div class="pd10"></div>
+          <ul class="skills-list">
+            <li>HTML &amp; CSS</li>
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>Canvas API</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- <section id="skills" class="skills container">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>HTML &amp; CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>Node.js &amp; APIs</li>
+        </ul>
+      </section> -->
+
+      <section id="contact" class="contact container">
+        <!-- <form id="contact-form" action="#" method="post" novalidate>
+					<label>
+						<span>Name</span>
+						<input type="text" name="name" required />
+					</label>
+					<label>
+						<span>Email</span>
+						<input type="email" name="email" required />
+					</label>
+					<label>
+						<span>Message</span>
+						<textarea name="message" rows="5" required></textarea>
+					</label>
+					<button type="submit" class="btn">Send</button>
+				</form> -->
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          If you'd like to reach out,
+          <a href="mailto:gabriel.r.alamo@gmail.com">email me</a>
+          or connect with me on
+          <a href="https://www.linkedin.com/in/gabriel-alamo" rel="me"
+            >LinkedIn</a
+          >
+          / <a href="https://github.com/Jackal-HQ" rel="me">Github</a>.
+        </p>
+        <p>© <span id="year"></span> Gabriel R. Alamo.</p>
+        <p></p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

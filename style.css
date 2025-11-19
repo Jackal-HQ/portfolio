@@ -1,0 +1,234 @@
+:root {
+  --bg: #0f1724;
+  --card: #0b1220;
+  --muted: #98a0b3;
+  --accent: #4f46e5;
+  --surface: #0b1220;
+  --text: #e6eef8;
+  --radius: 10px;
+  --gap: 1.25rem;
+  font-size: 16px;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Inter, Segoe UI, Helvetica, Arial, sans-serif;
+  background: var(--bg); /* use a single dark color to avoid mid-page transition */
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+#nav-toggle {
+  display: none;
+  background: none;
+  border: 0;
+  color: var(--text);
+  font-size: 1.25rem;
+}
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+}
+.nav a:hover {
+  color: var(--text);
+}
+
+/* Hero background image */
+.hero {
+  /* update this path to where you put the image (example: images/hero.jpg) */
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #0b1220; /* fallback color while image loads */
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  padding: 4rem 0;
+}
+
+/* subtle overlay for text contrast */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.55));
+  pointer-events: none;
+}
+
+/* make sure the container sits above the overlay */
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* avoid background-attachment: fixed on small devices */
+@media (min-width: 900px) {
+  .hero {
+    background-attachment: fixed;
+  }
+}
+
+.about,
+.projects,
+.skills,
+.contact {
+  padding: 3rem 0;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  align-items: start; /* don't stretch items vertically */
+}
+.project-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+.card-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.skills-list li {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+}
+
+.contact form {
+  display: grid;
+  gap: 0.5rem;
+  max-width: 560px;
+}
+.contact label {
+  display: block;
+}
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: transparent;
+  color: var(--text);
+}
+
+.site-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+/* Fix: prevent project cards from overflowing their container on small screens */
+.project-grid {
+  width: 100%;
+  align-items: start; /* don't stretch items vertically */
+}
+
+/* Allow grid items and their contents to shrink and wrap long words */
+.project-card,
+.project-card * {
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.project-card p,
+.project-card a,
+.project-card .skills-list {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* Restored button styles */
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color .15s ease, transform .08s ease;
+}
+.btn:hover,
+.btn:focus {
+  background: #3b33c4; /* slightly darker accent */
+  transform: translateY(-1px);
+  outline: 2px solid rgba(79, 70, 229, 0.18);
+  outline-offset: 2px;
+}
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  #nav-toggle {
+    display: inline-block;
+  }
+  .nav {
+    display: none;
+  }
+  .nav.open {
+    display: block;
+  }
+  .nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* Utility spacing */
+.muted {
+  color: var(--muted);
+}
+
+.pd10 {
+  padding-bottom: 10px;
+}
