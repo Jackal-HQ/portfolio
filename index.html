@@ -3,225 +3,251 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Portfolio — Gabriel R. Alamo</title>
+    <title>The Codex of Gabriel R. Alamo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cinzel+Decorative:wght@700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <header class="site-header">
       <div class="container header-inner">
-        <a class="logo" href="#home">Gabriel R. Alamo</a>
-        <button
-          id="nav-toggle"
-          aria-label="Open navigation"
-          aria-expanded="false"
-        >
-          ☰
-        </button>
+        <a class="logo" href="#home" title="Roll a d20">
+          <span class="logo-icon">⚔</span> Gabriel R. Alamo
+        </a>
+        <button id="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
         <nav id="primary-nav" class="nav" aria-label="Primary navigation">
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <!-- <li><a href="#skills">Skills</a></li> -->
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home">Realm</a></li>
+            <li><a href="#about">Character Sheet</a></li>
+            <li><a href="#projects">Quests</a></li>
+            <li><a href="#contact">Send a Raven</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
+
+      <!-- ── Hero ── -->
       <section id="home" class="hero">
+        <div id="hero-sparks"></div>
         <div class="container">
-          <h1>Hi, I'm Gabriel Ricardo Alamo.</h1>
-          <p class="lead">I'm a designer and developer.</p>
-          <p><a class="btn" href="#projects">See my work</a></p>
+          <p class="hero-eyebrow">✦ &nbsp; Adventurer &nbsp;·&nbsp; Builder &nbsp;·&nbsp; Arcane Engineer &nbsp; ✦</p>
+          <h1>Gabriel Ricardo Alamo</h1>
+          <p class="lead">Wielder of code. Forger of digital worlds.</p>
+          <p><a class="btn" href="#projects">View my Quests</a></p>
         </div>
       </section>
 
+      <!-- ── About / Character Sheet ── -->
       <section id="about" class="about container">
-        <h2>About Me</h2>
-        <p>
-          Computer Science Junior at Florida International University passionate
-          about AI-driven development and purpose-built applications. Director of Logistic for INIT FIU. Currently
-          balancing academics with hands-on experience across Project
-          Management, Customer Service and Technical Support. 
-          I currently work as technology specialist at Lexus so we can go referral for referral
-          if you want a new car.
-        </p>
+        <h2><span>Character Sheet</span></h2>
+        <div class="character-sheet">
+          <div class="char-lore">
+            <p>
+              Computer Science student at Florida International University (graduating December 2026),
+              driven by a passion for AI-driven development and purpose-built applications.
+              Currently on two active campaigns: an R&amp;D internship at Preference Consulting
+              building real-time telemetry systems, and a long-running role as Technology Specialist
+              at Lexus. Director of Logistics &amp; RSO Rep for INIT FIU. Also deep in the AWS
+              Cloud Foundations and CodePath Tech Interview Prep grind.
+              (And yes — referral for referral if you want a new ride.)
+            </p>
+          </div>
+          <div class="char-stats">
+            <div class="stat-block">
+              <span class="stat-label">Class</span>
+              <span class="stat-value">Full-Stack Developer</span>
+            </div>
+            <div class="stat-block">
+              <span class="stat-label">Level</span>
+              <span class="stat-value">B.S. Computer Science · FIU · Dec 2026</span>
+            </div>
+            <div class="stat-block">
+              <span class="stat-label">Guild</span>
+              <span class="stat-value">INIT FIU · Director of Logistics &amp; RSO Rep</span>
+            </div>
+            <div class="stat-block">
+              <span class="stat-label">Campaign I</span>
+              <span class="stat-value">R&amp;D Intern · Preference Consulting</span>
+            </div>
+            <div class="stat-block">
+              <span class="stat-label">Campaign II</span>
+              <span class="stat-value">Technology Specialist · Lexus</span>
+            </div>
+            <div class="stat-block">
+              <span class="stat-label">Specialty</span>
+              <span class="stat-value">AI-Driven Arcana · Cloud &amp; Systems</span>
+            </div>
+          </div>
+        </div>
       </section>
 
+      <!-- ── Projects / Quests ── -->
       <section id="projects" class="projects container">
-        <h2>Selected Projects</h2>
+        <h2><span>Completed Quests</span></h2>
         <div class="project-grid">
 
           <article class="project-card">
+            <div class="quest-type">⚗ Arcane Tool</div>
             <h3>John Hancock OFX Reader</h3>
             <p>
-              OFX Transaction Viewer is a Streamlit-based application that converts raw OFX/QFX financial files into clean, readable transaction data. 
-              It supports non-XML (SGML) OFX formats, extracts trade dates, and provides quick insights such as buy/sell counts, unit totals, and CSV exports for further analysis.
+              A Streamlit-based application that converts raw OFX/QFX financial files into clean,
+              readable transaction data. Supports non-XML (SGML) OFX formats, extracts trade dates,
+              and provides quick insights such as buy/sell counts, unit totals, and CSV exports.
             </p>
-            <a
-              class="card-link"
-              href="https://github.com/Jackal-HQ/John-Hancock-OFX-Reader" target="_blank"
-              >View project →</a
-            >
+            <a class="card-link" href="https://github.com/Jackal-HQ/John-Hancock-OFX-Reader" target="_blank">Open the Tome →</a>
             <div class="pd10"></div>
-
+            <div class="skills-header">Spells Employed</div>
             <ul class="skills-list">
               <li>Python</li>
               <li>Streamlit</li>
               <li>pandas</li>
               <li>ofxparse</li>
             </ul>
+            <button class="card-toggle">▲ &nbsp;Seal Scroll</button>
           </article>
-          
-          <article class="project-card">
-            <h3>HERMES – AI News Agent</h3>
-            <p>
-              HERMES is a web-based AI-powered news agent that generates and
-              presents multimedia news stories directly through an interactive
-              Flask web interface. The platform integrates AI news generation,
-              video playback, and navigation through past news content.
-            </p>
-            <a
-              class="card-link"
-              href="https://github.com/daniel-rawana/ai-news-agent" target="_blank"
-              >View project →</a
-            >
-            <div class="pd10"></div>
 
+          <article class="project-card">
+            <div class="quest-type">🜁 Divination Engine</div>
+            <h3>Hermes.AI – AI News Agent</h3>
+            <p>
+              AI-driven multi-agent system built with a team of 8 using agile sprints. Retrieves
+              and analyzes real-time news, parsing data into multimedia stories with DALL-E generated
+              images via a Flask web app. Video Creation Agent integrates Whisper + gTTS for
+              text-to-speech synthesis, cutting pipeline run time by 17%.
+            </p>
+            <a class="card-link" href="https://github.com/daniel-rawana/ai-news-agent" target="_blank">Open the Tome →</a>
+            <div class="pd10"></div>
+            <div class="skills-header">Spells Employed</div>
+            <ul class="skills-list">
+              <li>Python</li>
+              <li>Flask</li>
+              <li>OpenAI</li>
+              <li>DALL-E</li>
+              <li>Whisper</li>
+              <li>gTTS</li>
+              <li>ffmpeg</li>
+            </ul>
+            <button class="card-toggle">▲ &nbsp;Seal Scroll</button>
+          </article>
+
+          <article class="project-card">
+            <div class="quest-type">🜃 Nature's Codex</div>
+            <h3>Water Quality Data Dashboard</h3>
+            <p>
+              Engineered a RESTful backend in Flask that reduced data retrieval latency by
+              structuring a MongoDB NoSQL database to handle complex queries across 1,000+ water
+              quality records. Streamlit dashboard transforms raw datasets into actionable
+              statistical trends using Z-Score methods with customizable visualizations.
+            </p>
+            <a class="card-link" href="https://github.com/FrankPuerta/Water-Quality-Observations-API-Project" target="_blank">Open the Tome →</a>
+            <div class="pd10"></div>
+            <div class="skills-header">Spells Employed</div>
+            <ul class="skills-list">
+              <li>Python</li>
+              <li>Flask</li>
+              <li>MongoDB</li>
+              <li>Streamlit</li>
+              <li>Plotly</li>
+              <li>Pandas</li>
+            </ul>
+            <button class="card-toggle">▲ &nbsp;Seal Scroll</button>
+          </article>
+
+        </div>
+
+        <div class="pd10"></div>
+
+        <div class="project-grid">
+
+          <article class="project-card">
+            <div class="quest-type">⚙ Engineering Expedition</div>
+            <h3>Real-Time Telemetry Pipeline</h3>
+            <p>
+              Engineered a telemetry system across Moonlight-Qt (C++/Qt) and Artemis Android (Java)
+              clients, capturing 6 performance metrics at 5-second intervals across 20+ concurrent
+              users. Full-stack monitoring pipeline with Flask, PostgreSQL, and Streamlit — PIN-UUID
+              device auth, live-refresh dashboards, Docker Compose deployment reducing setup from
+              30+ minutes to under 2 and increasing stored data points by 30%.
+            </p>
+            <a class="card-link" href="https://github.com/Jackal-HQ" target="_blank">Open the Tome →</a>
+            <div class="pd10"></div>
+            <div class="skills-header">Spells Employed</div>
+            <ul class="skills-list">
+              <li>C++ / Qt</li>
+              <li>Java</li>
+              <li>Flask</li>
+              <li>PostgreSQL</li>
+              <li>Streamlit</li>
+              <li>Docker</li>
+            </ul>
+            <button class="card-toggle">▲ &nbsp;Seal Scroll</button>
+          </article>
+
+          <article class="project-card">
+            <div class="quest-type">⚖ Merchant's Aid</div>
+            <h3>Lease Saving Guide</h3>
+            <p>
+              Multilingual desktop GUI via CustomTkinter that translates raw automotive data into
+              actionable insights — lease payment breakdowns and income-based affordability
+              recommendations. Relational MySQL database stores and queries dynamic vehicle pricing,
+              money rates, and insurance metrics for high-fidelity financial calculations.
+            </p>
+            <a class="card-link" href="https://github.com/Jackal-HQ/Lease-Saving-Guide" target="_blank">Open the Tome →</a>
+            <div class="pd10"></div>
+            <div class="skills-header">Spells Employed</div>
+            <ul class="skills-list">
+              <li>Python</li>
+              <li>MySQL</li>
+              <li>CustomTkinter</li>
+            </ul>
+            <button class="card-toggle">▲ &nbsp;Seal Scroll</button>
+          </article>
+
+          <article class="project-card">
+            <div class="quest-type">⚔ Arena Combat</div>
+            <h3>DuelDot</h3>
+            <p>
+              A fast-paced 2D shooter where you control a circle and battle other players using
+              precision shooting and strategic movement. Dodge bullets, take down enemies, and climb
+              the leaderboard in this minimalist multiplayer arena.
+            </p>
+            <a class="card-link" href="https://github.com/CarlosMelicandia/DuelDot" target="_blank">Open the Tome →</a>
+            <div class="pd10"></div>
+            <div class="skills-header">Spells Employed</div>
             <ul class="skills-list">
               <li>HTML &amp; CSS</li>
               <li>JavaScript</li>
-              <li>Python (Flask)</li>
-              <li>OpenAI / AI Agent System</li>
-              <li>YouTube / Video Embed</li>
+              <li>Node.js</li>
+              <li>Canvas API</li>
             </ul>
+            <button class="card-toggle">▲ &nbsp;Seal Scroll</button>
           </article>
 
-          <article class="project-card">
-            <h3>Water Quality Observations</h3>
-            <p>
-              Engineered full stack app to visualize Biscayne Bay water quality
-              data using Flask, MongoDB, and Streamlit. Designed and deployed a
-              Streamlit-based dashboard as frontend with customizable charts to
-              study statistic trends. Leveraged Flask to create an API pulling
-              data from MongoDB to return specified data to the frontend.
-              Created algorithms which filter datasets based on Z-Score methods
-              to import data to MongoDB database .
-            </p>
-            <a
-              class="card-link"
-              href="https://github.com/FrankPuerta/Water-Quality-Observations-API-Project" target="_blank"
-              >View project →</a
-            >
-            <div class="pd10"></div>
-            <ul class="skills-list">
-              <li>Python</li>
-              <li>Streamlit</li>
-              <li>MongoDB</li>
-              <li>Flask</li>
-            </ul>
-          </article>
-
-          
-        </div>
-        <!-- Spacing to look nice -->
-        <div class="pd10"></div> 
-
-        <div class="project-grid">
-        <article class="project-card">
-            <h3>Lease Saving Guide</h3>
-            <p>
-              This project is a car lease and insurance
-              calculator that helps users make informed decisions about car
-              leasing. It allows users to calculate monthly lease payments,
-              estimate insurance costs, and track savings toward their down
-              payment goals. The program supports both English and Spanish for
-              broader accessibility.
-            </p>
-            <a
-              class="card-link"
-              href="https://github.com/Jackal-HQ/Lease-Saving-Guide" target="_blank"
-              >View project →</a
-            >
-            <div class="pd10"></div>
-
-            <ul class="skills-list">
-              <li>Python</li>
-              <li>MYSQL</li>
-              <li>CustomTkinter</li>
-            </ul>
-          </article>
-
-        <article class="project-card">
-          <h3>DuelDot</h3>
-          <p>
-            A fast-paced 2D shooter where you control a circle and battle
-            against other players using precision shooting and strategic
-            movement. Dodge bullets, take down enemies, and climb the
-            leaderboard in this minimalist but intense multiplayer arena!
-          </p>
-          <a
-            class="card-link"
-            href="https://github.com/CarlosMelicandia/DuelDot" target="_blank"
-            >View project →</a
-          >
-          <div class="pd10"></div>
-          <ul class="skills-list">
-            <li>HTML &amp; CSS</li>
-            <li>JavaScript</li>
-            <li>Node.js</li>
-            <li>Canvas API</li>
-          </ul>
-        </article>
         </div>
       </section>
 
-      <!-- <section id="skills" class="skills container">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-          <li>HTML &amp; CSS</li>
-          <li>JavaScript</li>
-          <li>Python</li>
-          <li>SQL</li>
-          <li>Node.js &amp; APIs</li>
-        </ul>
-      </section> -->
+      <section id="contact" class="contact container"></section>
 
-      <section id="contact" class="contact container">
-        <!-- <form id="contact-form" action="#" method="post" novalidate>
-					<label>
-						<span>Name</span>
-						<input type="text" name="name" required />
-					</label>
-					<label>
-						<span>Email</span>
-						<input type="email" name="email" required />
-					</label>
-					<label>
-						<span>Message</span>
-						<textarea name="message" rows="5" required></textarea>
-					</label>
-					<button type="submit" class="btn">Send</button>
-				</form> -->
-      </section>
     </main>
 
+    <!-- ── Footer / Send a Raven ── -->
     <footer class="site-footer">
       <div class="container">
-        <h2>Contact</h2>
-        <p>
-          If you'd like to reach out,
-          <a href="mailto:gabriel.r.alamo@gmail.com " target="_blank">email me</a>
-          or connect with me on
-          <a href="https://www.linkedin.com/in/gabriel-alamo" rel="me" target="_blank"
-            >LinkedIn</a
-          >
-          / <a href="https://github.com/Jackal-HQ" rel="me" target="_blank">Github</a>.
+        <h2><span>Send a Raven</span></h2>
+        <p class="contact-lore">
+          Seek an audience? Dispatch your message via the ancient arts of electronic mail,
+          or find me in the guildhalls of the internet.
         </p>
-        <p>© <span id="year"></span> Gabriel R. Alamo.</p>
-        <p></p>
+        <div class="contact-links">
+          <a href="mailto:gabriel.r.alamo@gmail.com" target="_blank" class="contact-link">✉ &nbsp;Email</a>
+          <a href="https://www.linkedin.com/in/gabriel-alamo" rel="me" target="_blank" class="contact-link">⚜ &nbsp;LinkedIn</a>
+          <a href="https://github.com/Jackal-HQ" rel="me" target="_blank" class="contact-link">⚙ &nbsp;GitHub</a>
+        </div>
+        <p class="footer-copy">© <span id="year"></span> Gabriel R. Alamo &nbsp;·&nbsp; All rights reserved across all realms.</p>
       </div>
     </footer>
 
